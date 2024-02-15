@@ -20,4 +20,32 @@ The CSS stack is an example of full use of the layers of the tokens.
 
 I am going to show my web point of view how to organize tokens by themes.
 
-ˋ
+ˋˋˋcss
+.theme {
+  /* base */
+  --yellow: gold;
+  --blue: darkSlateBlue;
+
+  &.-dark {
+    /* base */
+    --yellow: khaki;
+    --blue: lightBlue;
+  }
+}
+
+.theme {
+  /* foundation */
+  --color-primary: var(--blue);
+}
+ˋˋˋ
+
+
+
+
+
+
+
+
+
+
+
