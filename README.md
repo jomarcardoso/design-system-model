@@ -42,7 +42,7 @@ Patterns are the values of the language with a semantic load and even compositio
 
 I am going to show my web point of view how to organize tokens by themes.
 
-ˋˋˋcss
+```css
 .theme {
   /* base */
   --yellow: gold;
@@ -59,7 +59,7 @@ I am going to show my web point of view how to organize tokens by themes.
   /* foundation */
   --color-primary: var(--blue);
 }
-ˋˋˋ
+```
 
 
 
