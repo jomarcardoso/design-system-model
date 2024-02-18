@@ -1,0 +1,134 @@
+.h1 {
+  font: var(--title-1-font);
+  color: var(--title-1-color);
+}
+
+.h2 {
+  font: var(--title-2-font);
+  padding-bottom: var(--title-2-padding-bottom);
+  border-bottom: var(--title-2-border-bottom);
+  text-transform: var(--title-2-case);
+}
+
+.link {
+  color: var(--link-color);
+}
+
+.input {
+  border: var(--input-border);
+  border-radius: var(--input-border-radius);
+  padding: var(--input-padding);
+}
+
+.button {
+  background-color: var(--button-bg);
+  border: 0;
+  border-radius: var(--button-border-radius);
+  color: var(--button-color);
+  padding: var(--button-padding);
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox {
+  position: relative;
+  height: var(--action-min-size);
+  width: var(--action-min-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    border: var(--checkbox-border);
+    height: var(--checkbox-size);
+    width: var(--checkbox-size);
+    border-radius: var(--checkbox-border-radius);
+    box-shadow: inset 0 0 0 3px white;
+  }
+
+  &:has(input:checked)::after {
+    background-color: var(--checkbox-color);
+  }
+}
+
+.radio-button {
+  position: relative;
+  height: var(--action-min-size);
+  width: var(--action-min-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    border: var(--radio-button-border);
+    height: var(--radio-button-size);
+    width: var(--radio-button-size);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px white;
+  }
+
+  &:has(input:checked)::after {
+    background-color: var(--radio-button-color);
+  }
+}
+
+.accordion {
+  border-bottom: var(--accordion-border);
+
+  > summary {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    min-height: var(--accordion-summary-height);
+
+    &::after {
+      content: '+';
+    }
+  }
+
+  &[open] {
+    background: var(--accordion-bg-active);
+    padding-bottom: 16px;
+
+    > summary {
+      font-weight: bold;
+
+      &::after {
+        content: '-';
+      }
+    }
+  }
+}
+
+.card {
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+}
