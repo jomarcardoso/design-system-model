@@ -1,2 +1,85 @@
 .theme-dark {
+  /* base */
+  --black: #212121;
+  --blue: LightBlue;
+  --yellow: LemonChiffon;
+  --red: LightSalmon;
+  --pink: LightPink;
+  --green: LightGreen;
+  --georgia: Georgia, serif;
+  --garamond: Garamond, serif;
+  --gray-1: WhiteSmoke;
+  --gray-2: GainsBoro;
+  --gray-3: LightGray;
+  --gray-4: Silver;
+  --gray-5: DarkGray;
+  --gray-6: Gray;
+  --gray-7: #444;
+
+  /* foundation */
+  --color-bg: var(--black);
+  --color-primary: var(--blue);
+  --color-secondary: var(--pink);
+  --color-text: var(--gray-1);
+  --color-title: var(--blue);
+  --color-success: var(--green);
+  --color-error: var(--red);
+  --color-warning: var(--yellow);
+  --font-title: var(--garamond);
+  --font-text: var(--georgia);
+  --border-width: 1px;
+  --border-width-action: 2px;
+  --border-color: var(--gray-4);
+  --border-color-section: var(--gray-2);
+  --border-color-active: var(--color-primary);
+  --border-radius: 2px;
+  --border-radius-container: 6px;
+  --action-min-size: 44px;
+  --selector-size: 28px;
+  --padding-container: 12px;
+
+  /* components */
+  --title-1-font: bold 42px var(--font-title); /* main title */
+  --title-1-color: var(--color-title);
+
+  --title-2-font: 22px var(--font-title); /* section title */
+  --title-2-padding-bottom: 8px;
+  --title-2-border-bottom: var(--border-width) solid var(--border-color-section);
+  --title-2-case: uppercase;
+
+  --title-3-font: bold 18px var(--font-title);
+  --title-4-font: bold 14px var(--font-text);
+  --title-5-font: 14px var(--font-title);
+
+  --text: 14px var(--font-text);
+  --text-secondary: condensed 13px var(--font-text);
+
+  --card-border: var(--border-width) solid var(--border-color);
+  --card-border-radius: var(--border-radius-container);
+  --card-padding: var(--padding-container);
+
+  --button-bg: var(--color-primary);
+  --button-border-radius: var(--border-radius);
+  --button-color: var(--black);
+  --button-padding: 4px 12px;
+
+  --checkbox-color: var(--color-primary);
+  --checkbox-border: var(--border-width-action) solid var(--checkbox-color);
+  --checkbox-size: var(--selector-size);
+  --checkbox-border-radius: var(--border-radius);
+
+  --radio-button-color: var(--color-primary);
+  --radio-button-border: var(--border-width-action) solid
+    var(--radio-button-color);
+  --radio-button-size: var(--selector-size);
+
+  --input-border: var(--border-width) solid var(--border-color);
+  --input-border-radius: var(--border-radius);
+  --input-padding: 4px 12px;
+
+  --link-color: var(--color-secondary);
+
+  --accordion-border: var(--border-width) solid var(--border-color-section);
+  --accordion-bg-active: var(--gray-7);
+  --accordion-summary-height: var(--action-min-size);
 }

@@ -15,6 +15,10 @@
   padding: 0 var(--padding-container);
 }
 
+.p-3 {
+  padding: 12px;
+}
+
 .py-1 {
   padding-bottom: 4px;
   padding-top: 4px;

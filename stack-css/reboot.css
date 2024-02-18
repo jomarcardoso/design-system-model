@@ -69,3 +69,8 @@ summary {
 hr {
   border-top-color: var(--border-color-section);
 }
+
+[class*='theme-'] {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
