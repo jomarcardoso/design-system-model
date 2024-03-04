@@ -78,3 +78,9 @@ The layer of variables is optional if the design system already have the tokens 
 ### Foundation layer
 
 ...
+
+### components layer
+
+One more layer may be seen like an overkill, but to your product is one more layer of patterns.
+
+> You will never attend 100% well of your user, so allow them to self attend.
