@@ -81,6 +81,6 @@ The layer of variables is optional if the design system already have the tokens 
 
 ### components layer
 
-One more layer may be seen like an overkill, but to your product is one more layer of patterns.
+One more layer may be seen like an overkill, but to your product is one more layer of patterns. One of the great benefits is when your stacks of components fail but your design system has this tokens to equalize the implementations of component patterns anywhere.
 
 > You will never attend 100% well of your user, so allow them to self attend.
