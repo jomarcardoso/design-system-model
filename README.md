@@ -94,4 +94,6 @@ I am going to give you some examples of ways to render HTML that I had to work w
 
 your component can partially attend and your client still need patterns to continue and do not need to ask you featured 
 
-I would not assume that my components will serve everyone every time
+I would not assume that my components will serve everyone every time.
+
+If your project has several stacks of components, and it is necessary to change an aspect of one of them, without the layer of component tokens, it will be necessary to create a task to each team to change to the value, and having this layer is only necessary edit in there. The maintenance is centered and follows the Single Responsibility Principle of the SOLID, that says, "There should never be more than one reason for a class to change", in other words, your component has its aspects of the technology and not the responsibility of the common characteristics of the design system.
