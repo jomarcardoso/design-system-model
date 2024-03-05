@@ -84,3 +84,12 @@ The layer of variables is optional if the design system already have the tokens 
 One more layer may be seen like an overkill, but to your product is one more layer of patterns. One of the great benefits is when your stacks of components fail but your design system has this tokens to equalize the implementations of component patterns anywhere.
 
 > You will never attend 100% well of your user, so allow them to self attend.
+
+I am going to give you some examples of ways to render HTML that I had to work with:
+
+- email with Apache Velocity
+- Google AMP
+- VTEX
+- SSR with Pug
+
+your component can partially attend and your client still need patterns to continue and do not need to ask you featured 
