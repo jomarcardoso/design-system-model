@@ -93,3 +93,5 @@ I am going to give you some examples of ways to render HTML that I had to work w
 - SSR with Pug
 
 your component can partially attend and your client still need patterns to continue and do not need to ask you featured 
+
+I would not assume that my components will serve everyone every time
