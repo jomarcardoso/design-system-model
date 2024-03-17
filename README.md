@@ -128,6 +128,10 @@ Bellow as idea of flux of development of a new features:
 
 ## Progressive enchancement
 
+The Progressive Enchancement is a way simple approach that is focused to the technology like a product.
+
+We can see this method in libraries like Bootstrap, that the design and code are in the same place.
+
 1. All stacks get together and plan the mimnimum of the component
 2. Developers build as planned
 3. Revisit this component to improve it
