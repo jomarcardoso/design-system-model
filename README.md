@@ -97,3 +97,25 @@ your component can partially attend and your client still need patterns to conti
 I would not assume that my components will serve everyone every time.
 
 If your project has several stacks of components, and it is necessary to change an aspect of one of them, without the layer of component tokens, it will be necessary to create a task to each team to change to the value, and having this layer is only necessary edit in there. The maintenance is centered and follows the Single Responsibility Principle of the SOLID, that says, "There should never be more than one reason for a class to change", in other words, your component has its aspects of the technology and not the responsibility of the common characteristics of the design system. This centered information becomes greater if you consider that users not attended by the componets of the design system but still have this values to make themselves and following the same patterns.
+
+## New features
+
+The plannning of a new feature do not necessaraly have to consider the limitation of the technologies that the will be impelmented. Material Design brings a good example of non conventional shapes que could not be make with CSS or it will need to bust a gut to do it. For Material Design the ideas of motion, shapes and everthing else is limited by creativity and it will be implementeded if possible, this approach is called "Gracefull Degradation", the planning aim the perfect but the limitation of technology, will cut some features off if necessary.  
+
+![https://m2.material.io/design/shape/about-shape.html#shaping-material](https://github.com/jomarcardoso/design-system-model/assets/27368585/d2edf425-cedc-4b25-b00f-7df0fbb64f3c)
+
+The other approach is more close to the technologies, 
+
+### Graceful degradation
+
+Graceful degradation is a great approach that allow the design system to scale with no barriers of the technology. Some user clients like Outlook, smart devices and old smartphones softwares would not influence the conception of the feature. The flow of planning is independent of further implemenetations. Libraries like Material UI and Angular Material are examples of developmenet of the the Material Design and both of them does not brings that impossible features for web like negative corner radius.
+
+1. Designers plan the ideal component
+2. All stacks get together to bring information about cares
+3. Developers build with the technology limitation
+
+## Progressive enchancement
+
+1. All stacks get together and plan the mimnimum of the component
+2. Developers build as planned
+3. Revisit this component to improve it
