@@ -108,10 +108,22 @@ The other approach is more close to the technologies,
 
 ### Graceful degradation
 
-Graceful degradation is a great approach that allow the design system to scale with no barriers of the technology. Some user clients like Outlook, smart devices and old smartphones softwares would not influence the conception of the feature. The flow of planning is independent of further implemenetations. Libraries like Material UI and Angular Material are examples of developmenet of the the Material Design and both of them does not brings that impossible features for web like negative corner radius.
+Graceful degradation is a great approach that allow the design system to scale with no barriers of the technology. Some user clients like Outlook, smart devices and old smartphones softwares would not influence the conception of the feature. The flow of planning is independent of further implemenetations. Libraries like Material UI and Angular Material are examples of developmenet of the the Material Design and both of them does not brings that impossible features for web like negative corner radius. Every stack of technology has to adapt that ideal feature to its technology and both stacks, definition and technology, run separately.
 
-1. Designers plan the ideal component
-2. All stacks get together to bring information about cares
+The necessity of this approach comes when some of these arguments show up:
+
+- All stack have to get together to identify all limitations
+- The stack of definition is not happy cutting features off
+- The design will have other technologies furthuer
+- The aim techonologies are evolving fast and frequently is needed to revisit the feature planning
+- When the team of definition and technology are not of the same company structure and do not talk each other
+
+For robust and growing Design Systems the Graceful degradation methodology is very recommended since the product can evolve and the technology will follow now what is possible and get better when possible, whether by an update or the decision to cut this limitation off, the Internet Explorer is a great recent example (consider was wrote in 2024).
+
+Bellow as idea of flux of development of a new features:
+
+1. Designers plan the ideal feature
+2. All specialists get together to bring information about cares, not the limitations, but the accessibility, user experience, SEO ideal and so on
 3. Developers build with the technology limitation
 
 ## Progressive enchancement
