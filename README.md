@@ -21,14 +21,16 @@ Here is where the design system starts, and if you or the company wish can keep 
 
 ### Language
 
-Here is defined all about the brand. This is the minimum of a design system. There is not much control and no patterns to follow, but a start of a visual identity.
+Here is defined all about the brand definitions and usually is the first page of a design system documentation. This languange is the minimum of a design system, there is not much control and no patterns to follow, but a start of a visual identity. The names in this level are not semantic because the role of this step is bring the basic information of the brand to be or not used afterward. There are some basic values that is in this layer:
 
-- palette colors
-- fonts
-- text sizes
-- writing style
-- borders
-- corner radius
+- Palette colors: orange, blue, green.
+- Fonts: Tahoma, Arial, Verdana.
+- Text sizes: 42px, 22px, 14px.
+- Corner radius: 5px, 2px.
+
+The list can go on with all brand definitions such as writing style, borders, shapes... 
+
+It is primordial the Language layer be well documented with all this patterns and what is expect for the brand. In the Material Design I see this step with their definition of what they call "material", and how it looks like and how the "materials" respond to users interactions.
 
 ### Patterns
 
@@ -44,7 +46,21 @@ The tokens stacks is necessary for cross technologies work with the same values.
 
 ### Variables
 
-All basic definitions will be in variables. It could be many predefined variables that not exacly will be used in the components yet. Here can have a palette of gray tons that will be defined for a possbile use.
+All basic definitions will be in variables. It could be many predefined variables that not exacly will be used in the components yet. Here can have a palette of gray tons that will be defined for a possbile use. This layer represent in code what has in the Language of the Definition Stack.
+
+Being raw values to possible use, it is not recommend that this variables comes up to the final users. It has to be used only to fill up the next level of tokens. 
+
+```json
+{
+  "orange": "#FF8C00",
+  "red": "#DC143C"
+}
+```
+
+```scss
+$orange: #FF8C00;
+$red: #DC143C;
+```
 
 I am going to show my web point of view how to organize tokens by themes.
 
@@ -128,7 +144,7 @@ Below is an idea of the development flow for new features:
 2. All specialists come together to bring information about concerns, not limitations, but accessibility, user experience, SEO ideals, and so on.
 3. Developers build with the technology limitation.
 
-## Progressive Enhancement
+### Progressive Enhancement
 
 Progressive Enhancement is a simple approach that focuses on technology as a product. We can see this method in libraries like Bootstrap, where the design and code are in the same place. The limitations of the technology will sometimes make it necessary to change the structure and, in some cases, the visual. For example, Bootstrap has used `float` CSS for its grid for many years because some browsers did not implement the flexbox features.
 
@@ -143,5 +159,5 @@ Below is an example of how YouTube was on Internet Explorer, showing exactly how
 The steps of planning and development with progressive enhancement are:
 
 1. All stacks come together and plan the minimum of the component.
-2. Developers build as planned.
-3. Revisit this component to improve it.
+2. Develop as planned.
+3. Revisit this component to improve it when the technology limitation is overcome.
