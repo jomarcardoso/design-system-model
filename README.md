@@ -98,8 +98,6 @@ I would not assume that my components will serve everyone every time.
 
 If your project has several stacks of components, and it is necessary to change an aspect of one of them, without the layer of component tokens, it will be necessary to create a task to each team to change to the value, and having this layer is only necessary edit in there. The maintenance is centered and follows the Single Responsibility Principle of the SOLID, that says, "There should never be more than one reason for a class to change", in other words, your component has its aspects of the technology and not the responsibility of the common characteristics of the design system. This centered information becomes greater if you consider that users not attended by the componets of the design system but still have this values to make themselves and following the same patterns.
 
-Here's your text corrected and formatted in markdown:
-
 ## New Features
 
 The planning of a new feature does not necessarily have to consider the limitations of the technologies that will be implemented. Material Design provides a good example of unconventional shapes that cannot be easily achieved with CSS alone. For Material Design, ideas such as motion, shapes, and everything else are limited only by creativity and are implemented if possible. This approach is called "Graceful Degradation," where the initial planning aims for perfection but acknowledges technological limitations that may require certain features to be omitted.
