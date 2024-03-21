@@ -98,44 +98,46 @@ I would not assume that my components will serve everyone every time.
 
 If your project has several stacks of components, and it is necessary to change an aspect of one of them, without the layer of component tokens, it will be necessary to create a task to each team to change to the value, and having this layer is only necessary edit in there. The maintenance is centered and follows the Single Responsibility Principle of the SOLID, that says, "There should never be more than one reason for a class to change", in other words, your component has its aspects of the technology and not the responsibility of the common characteristics of the design system. This centered information becomes greater if you consider that users not attended by the componets of the design system but still have this values to make themselves and following the same patterns.
 
-## New features
+Here's your text corrected and formatted in markdown:
 
-The plannning of a new feature do not necessaraly have to consider the limitation of the technologies that the will be impelmented. Material Design brings a good example of non conventional shapes que could not be make with CSS or it will need to bust a gut to do it. For Material Design the ideas of motion, shapes and everthing else is limited by creativity and it will be implementeded if possible, this approach is called "Gracefull Degradation", the planning aim the perfect but the limitation of technology, will cut some features off if necessary.  
+## New Features
 
-![https://m2.material.io/design/shape/about-shape.html#shaping-material](https://github.com/jomarcardoso/design-system-model/assets/27368585/d2edf425-cedc-4b25-b00f-7df0fbb64f3c)
+The planning of a new feature does not necessarily have to consider the limitations of the technologies that will be implemented. Material Design provides a good example of unconventional shapes that cannot be easily achieved with CSS alone. For Material Design, ideas such as motion, shapes, and everything else are limited only by creativity and are implemented if possible. This approach is called "Graceful Degradation," where the initial planning aims for perfection but acknowledges technological limitations that may require certain features to be omitted.
 
-The other approach is more close to the technologies, 
+![Material Design Shapes](https://m2.material.io/design/shape/about-shape.html#shaping-material)
 
-### Graceful degradation
+The other approach is more closely related to the technologies.
 
-Graceful degradation is a great approach that allow the design system to scale with no barriers of the technology. Some user clients like Outlook, smart devices and old smartphones softwares would not influence the conception of the feature. The flow of planning is independent of further implemenetations. Libraries like Material UI and Angular Material are examples of developmenet of the the Material Design and both of them does not brings that impossible features for web like negative corner radius. Every stack of technology has to adapt that ideal feature to its technology and both stacks, definition and technology, run separately.
+### Graceful Degradation
 
-The necessity of this approach comes when some of these arguments show up:
+Graceful degradation is a great approach that allows the design system to scale without barriers of technology. User clients like Outlook, smart devices, and old smartphone software would not influence the conception of the feature The planning flow is independent of further implementations. Libraries like Material UI and Angular Material are examples of development of Material Design, and both of them do not bring impossible features for the web, such as negative corner radius. Every stack of technology has to adapt that ideal feature to its technology, and both stacks, definition and technology, run separately.
 
-- All stack have to get together to identify all limitations
-- The stack of definition is not happy cutting features off
-- The design will have other technologies furthuer
-- The aim techonologies are evolving fast and frequently is needed to revisit the feature planning
-- When the team of definition and technology are not of the same company structure and do not talk each other
+The necessity of this approach arises when some of these arguments show up:
 
-For robust and growing Design Systems the Graceful degradation methodology is very recommended since the product can evolve and the technology will follow now what is possible and get better when possible, whether by an update or the decision to cut this limitation off, the Internet Explorer is a great recent example (consider was wrote in 2024).
+- All stacks have to come together to identify all limitations.
+- The stack of definition is not happy cutting features off.
+- There will be more technologies implementing that feature further.
+- The aim technologies are evolving fast, and frequent revisits to the feature planning are needed.
+- When the team of definition and technology are not of the same company structure and do not communicate with each other.
 
-Bellow as idea of flux of development of a new features:
+For robust and growing design systems, the graceful degradation methodology is highly recommended since the product can evolve, and the technology will follow as possible and get better when possible, whether by an update or the decision to cut off this limitation. Internet Explorer is a recent example (considering this was written in 2024).
 
-1. Designers plan the ideal feature
-2. All specialists get together to bring information about cares, not the limitations, but the accessibility, user experience, SEO ideal and so on
-3. Developers build with the technology limitation
+Below is an idea of the development flow for new features:
 
-## Progressive enchancement
+1. Designers plan the ideal feature.
+2. All specialists come together to bring information about concerns, not limitations, but accessibility, user experience, SEO ideals, and so on.
+3. Developers build with the technology limitation.
 
-The Progressive Enchancement is a way simple approach that is focused to the technology like a product. We can see this method in libraries like Bootstrap, that the design and code are in the same place. The limitation of the technology will sometimes makes necessary to change the structure and in some cases the visual. Botstrap, for instance for many years have been made its grid with `float` CSS, because some browsers have not implemented the flexbox features.
+## Progressive Enhancement
 
-Another way to use the Progressive Enchacement is combined with Graceful Degradation. When it is necessary to have support for a very limited technology the project can start with common features, but at the breakpoint split the methods and the limited technology has his own planning of features based in their limitations and can be improved if has a new techology update or the team find a workaround to get closer to the main Project. Below how was the Youtube on Internet Explorer that show exactly how the Progressive Enchancement works; There is a common base of backend data, url, but the rendered pages are not the same. They decided to not create with all features and remove what does not works on IE. For other browsers, pages with more updated features could be made and then apply Graceful Degradation.
+Progressive Enhancement is a simple approach that focuses on technology as a product. We can see this method in libraries like Bootstrap, where the design and code are in the same place. The limitations of the technology will sometimes make it necessary to change the structure and, in some cases, the visual. For example, Bootstrap has used `float` CSS for its grid for many years because some browsers did not implement the flexbox features.
+
+Another way to use Progressive Enhancement is combined with Graceful Degradation. When it is necessary to support a very limited technology, the project can start with common features, but at the breakpoint, split the methods, and the limited technology has its own planning of features based on its limitations and can be improved if there is a new technology update or if the team finds a workaround to get closer to the main project. Below is an example of how YouTube was on Internet Explorer, showing exactly how Progressive Enhancement works. There is a common base of backend data, URL, but the rendered pages are not the same. They decided not to create all features and remove what does not work on IE. For other browsers, pages with more updated features could be made and then apply Graceful Degradation.
 
 ![Youtube on Internet Explorer](https://github.com/jomarcardoso/design-system-model/assets/27368585/82d5ddfe-0aea-4939-8ab0-d2c9a9674865 "source: https://news.softpedia.com/news/YouTube-No-Longer-Working-for-Some-Internet-Explorer-11-Users-401553.shtml")
 
-The steps of planning and developement with progressive enchancement are:
+The steps of planning and development with progressive enhancement are:
 
-1. All stacks get together and plan the minimum of the component
-2. Developers build as planned
-3. Revisit this component to improve it
+1. All stacks come together and plan the minimum of the component.
+2. Developers build as planned.
+3. Revisit this component to improve it.
