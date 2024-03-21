@@ -110,6 +110,8 @@ The other approach is more closely related to the technologies.
 
 Graceful degradation is a great approach that allows the design system to scale without barriers of technology. User clients like Outlook, smart devices, and old smartphone software would not influence the conception of the feature The planning flow is independent of further implementations. Libraries like Material UI and Angular Material are examples of development of Material Design, and both of them do not bring impossible features for the web, such as negative corner radius. Every stack of technology has to adapt that ideal feature to its technology, and both stacks, definition and technology, run separately.
 
+> When an updated version of a browser or operating system is released, new features are often included to keep pace with the latest enhancements to internet standards and other technologies.
+
 The necessity of this approach arises when some of these arguments show up:
 
 - All stacks have to come together to identify all limitations.
@@ -122,7 +124,7 @@ For robust and growing design systems, the graceful degradation methodology is h
 
 Below is an idea of the development flow for new features:
 
-1. Designers plan the ideal feature.
+1. The graceful degradation approach starts by designing the application to deliver the functionality necessary to meet the needs of users on modern. [TechTarget](https://www.techtarget.com/searchnetworking/definition/graceful-degradation#:~:text=Graceful%20degradation%20is%20the%20ability,is%20to%20prevent%20catastrophic%20failure.)
 2. All specialists come together to bring information about concerns, not limitations, but accessibility, user experience, SEO ideals, and so on.
 3. Developers build with the technology limitation.
 
@@ -130,7 +132,11 @@ Below is an idea of the development flow for new features:
 
 Progressive Enhancement is a simple approach that focuses on technology as a product. We can see this method in libraries like Bootstrap, where the design and code are in the same place. The limitations of the technology will sometimes make it necessary to change the structure and, in some cases, the visual. For example, Bootstrap has used `float` CSS for its grid for many years because some browsers did not implement the flexbox features.
 
-Another way to use Progressive Enhancement is combined with Graceful Degradation. When it is necessary to support a very limited technology, the project can start with common features, but at the breakpoint, split the methods, and the limited technology has its own planning of features based on its limitations and can be improved if there is a new technology update or if the team finds a workaround to get closer to the main project. Below is an example of how YouTube was on Internet Explorer, showing exactly how Progressive Enhancement works. There is a common base of backend data, URL, but the rendered pages are not the same. They decided not to create all features and remove what does not work on IE. For other browsers, pages with more updated features could be made and then apply Graceful Degradation.
+Another way to use Progressive Enhancement is combined with Graceful Degradation. When it is necessary to support a very limited technology, the project can start with common features, but at the breakpoint, split the methods, and the limited technology has its own planning of features based on its limitations and can be improved if there is a new technology update or if the team finds a workaround to get closer to the main project. 
+
+> Instead of starting with the advanced features supported on modern browsers, progressive enhancement starts with the most basic features supported on all browsers. The developer than adds the more advanced features, which are automatically available when the user accesses the application through a modern browser.
+
+Below is an example of how YouTube was on Internet Explorer, showing exactly how Progressive Enhancement works. There is a common base of backend data, URL, but the rendered pages are not the same. They decided not to create all features and remove what does not work on IE. For other browsers, pages with more updated features could be made and then apply Graceful Degradation.
 
 ![Youtube on Internet Explorer](https://github.com/jomarcardoso/design-system-model/assets/27368585/82d5ddfe-0aea-4939-8ab0-d2c9a9674865 "source: https://news.softpedia.com/news/YouTube-No-Longer-Working-for-Some-Internet-Explorer-11-Users-401553.shtml")
 
