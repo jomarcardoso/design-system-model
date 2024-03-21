@@ -128,10 +128,14 @@ Bellow as idea of flux of development of a new features:
 
 ## Progressive enchancement
 
-The Progressive Enchancement is a way simple approach that is focused to the technology like a product.
+The Progressive Enchancement is a way simple approach that is focused to the technology like a product. We can see this method in libraries like Bootstrap, that the design and code are in the same place. The limitation of the technology will sometimes makes necessary to change the structure and in some cases the visual. Botstrap, for instance for many years have been made its grid with `float` CSS, because some browsers have not implemented the flexbox features.
 
-We can see this method in libraries like Bootstrap, that the design and code are in the same place.
+Another way to use the Progressive Enchacement is combined with Graceful Degradation. When it is necessary to have support for a very limited technology the project can start with common features, but at the breakpoint split the methods and the limited technology has his own planning of features based in their limitations and can be improved if has a new techology update or the team find a workaround to get closer to the main Project. Below how was the Youtube on Internet Explorer that show exactly how the Progressive Enchancement works; There is a common base of backend data, url, but the rendered pages are not the same. They decided to not create with all features and remove what does not works on IE. For other browsers, pages with more updated features could be made and then apply Graceful Degradation.
 
-1. All stacks get together and plan the mimnimum of the component
+![Youtube on Internet Explorer](https://github.com/jomarcardoso/design-system-model/assets/27368585/82d5ddfe-0aea-4939-8ab0-d2c9a9674865 "source: https://news.softpedia.com/news/YouTube-No-Longer-Working-for-Some-Internet-Explorer-11-Users-401553.shtml")
+
+The steps of planning and developement with progressive enchancement are:
+
+1. All stacks get together and plan the minimum of the component
 2. Developers build as planned
 3. Revisit this component to improve it
