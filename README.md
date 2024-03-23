@@ -144,6 +144,8 @@ Below is an idea of the development flow for new features:
 2. All specialists come together to bring information about concerns, not limitations, but accessibility, user experience, SEO ideals, and so on.
 3. Developers build with the technology limitation.
 
+Since the releases of technology stacks are not tied to design, it can be splited in smaller features. The development can use other method like Progressive Enhancement  
+
 ### Progressive Enhancement
 
 Progressive Enhancement is a simple approach that focuses on technology as a product. We can see this method in libraries like Bootstrap, where the design and code are in the same place. The limitations of the technology will sometimes make it necessary to change the structure and, in some cases, the visual. For example, Bootstrap has used `float` CSS for its grid for many years because some browsers did not implement the flexbox features.
