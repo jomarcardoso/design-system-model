@@ -130,7 +130,6 @@ Graceful degradation is a great approach that allows the design system to scale 
 
 The necessity of this approach arises when some of these arguments show up:
 
-- All stacks have to come together to identify all limitations.
 - The stack of definition is not happy cutting features off.
 - There will be more technologies implementing that feature further.
 - The aim technologies are evolving fast, and frequent revisits to the feature planning are needed.
@@ -138,10 +137,10 @@ The necessity of this approach arises when some of these arguments show up:
 
 For robust and growing design systems, the graceful degradation methodology is highly recommended since the product can evolve, and the technology will follow as possible and get better when possible, whether by an update or the decision to cut off this limitation. Internet Explorer is a recent example (considering this was written in 2024).
 
-Below is an idea of the development flow for new features:
+Even though Graceful Degradation comes as a method to cut obstacles off, but it is also necessary to consider the limitations of each technology stack to decide if the differences in delivery will be acceptable in the final product. If it is crucial that every stack uses the exact same font family, but one of them does not support that font family, it must be reconsidered. Below is an idea of the development flow for new features:
 
-1. The graceful degradation approach starts by designing the application to deliver the functionality necessary to meet the needs of users on modern. [TechTarget](https://www.techtarget.com/searchnetworking/definition/graceful-degradation#:~:text=Graceful%20degradation%20is%20the%20ability,is%20to%20prevent%20catastrophic%20failure.)
-2. All specialists come together to bring information about concerns, not limitations, but accessibility, user experience, SEO ideals, and so on.
+1. The graceful degradation approach starts by designing the application to deliver the functionality necessary to meet the needs of users on modern technologies . [TechTarget](https://www.techtarget.com/searchnetworking/definition/graceful-degradation#:~:text=Graceful%20degradation%20is%20the%20ability,is%20to%20prevent%20catastrophic%20failure.)
+2. All specialists come together to provide information about concerns, limitations, accessibility considerations, user experience, SEO requirements, and so on. The limitations identified in this step determine whether all features should proceed or not.
 3. Developers build with the technology limitation.
 
 Since the releases of technology stacks are not tied to design, it can be splited in smaller features. The development can use other method like Progressive Enhancement  
