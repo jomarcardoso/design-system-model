@@ -118,7 +118,7 @@ If your project has several stacks of components, and it is necessary to change 
 
 The planning of a new feature does not necessarily have to consider the limitations of the technologies that will be implemented. Material Design provides a good example of unconventional shapes that cannot be easily achieved with CSS alone. For Material Design, ideas such as motion, shapes, and everything else are limited only by creativity and are implemented if possible. This approach is called "Graceful Degradation," where the initial planning aims for perfection but acknowledges technological limitations that may require certain features to be omitted.
 
-![Material Design Shapes](https://m2.material.io/design/shape/about-shape.html#shaping-material)
+![Material Design Shapes](https://github.com/jomarcardoso/design-system-model/assets/27368585/fe739abd-4d29-4b34-ba17-f8d299f69ab8)
 
 The other approach is more closely related to the technologies.
 
