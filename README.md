@@ -135,7 +135,7 @@ The necessity of this approach arises when some of these arguments show up:
 - The aim technologies are evolving fast, and frequent revisits to the feature planning are needed.
 - When the team of definition and technology are not of the same company structure and do not communicate with each other.
 
-For robust and growing design systems, the graceful degradation methodology is highly recommended since the product can evolve, and the technology will follow as possible and get better when possible, whether by an update or the decision to cut off this limitation. Internet Explorer is a recent example (considering this was written in 2024).
+For robust and growing design systems, the graceful degradation methodology is recommended since the product can evolve, and the technology will follow it and get better when possible, whether by an update or the decision to cut off this limitation. Internet Explorer is a recent example (considering this was written in 2024).
 
 Even though Graceful Degradation comes as a method to cut obstacles off, but it is also necessary to consider the limitations of each technology stack to decide if the differences in delivery will be acceptable in the final product. If it is crucial that every stack uses the exact same font family, but one of them does not support that font family, it must be reconsidered. Below is an idea of the development flow for new features:
 
