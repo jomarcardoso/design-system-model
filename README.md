@@ -154,6 +154,10 @@ Another way to use Progressive Enhancement is combined with Graceful Degradation
 
 > Instead of starting with the advanced features supported on modern browsers, progressive enhancement starts with the most basic features supported on all browsers. The developer than adds the more advanced features, which are automatically available when the user accesses the application through a modern browser.
 
+![a chart showing the progressive enchancement by stack](https://github.com/jomarcardoso/design-system-model/assets/27368585/1a46c620-cc76-43ad-8a17-aa49d1341494)
+
+In the image above, the stack of design have the desired final specification of layout, motion and so on. Each stack of technology plan to reply the ideal specification with their limitations using the Graceful Degradation method. Then the stacks of technology starts new cycles of development following the Progressive Enchancement method to split at maximum each delivering customer value. The improvement by stack can continue if there is no limitation and the team planned to release new features to get closer the specification or that technology evolved and then can support the continuity of development.
+
 Below is an example of how YouTube was on Internet Explorer, showing exactly how Progressive Enhancement works. There is a common base of backend data, URL, but the rendered pages are not the same. They decided not to create all features and remove what does not work on IE. For other browsers, pages with more updated features could be made and then apply Graceful Degradation.
 
 ![Youtube on Internet Explorer](https://github.com/jomarcardoso/design-system-model/assets/27368585/82d5ddfe-0aea-4939-8ab0-d2c9a9674865 "source: https://news.softpedia.com/news/YouTube-No-Longer-Working-for-Some-Internet-Explorer-11-Users-401553.shtml")
